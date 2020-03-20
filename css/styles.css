@@ -160,6 +160,11 @@ a {
     border-radius: .2rem;
 }
 
+.main-card-skills-skill:hover {
+    transition: all 1s;
+    transform: scale(1.2);
+}
+
 .main-card-skills-skill:nth-child(even) {
 
     background-color: blue;
@@ -205,6 +210,11 @@ a {
     width: 100%;
 }
 
+.footer-links-link-sm-img:hover {
+    transition: all .8s;
+    transform: scale(1.4);
+}
+
 .footer-text {
     margin-top: 1rem;
     margin-bottom: .3rem;
@@ -237,11 +247,12 @@ a {
 @media screen and (min-width: 768px) {
     .page {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: .8fr 3fr 5fr 1fr;
+        grid-template-rows: .5fr 3fr 5fr 1fr;
         grid-template-areas: "nav nav"
                              "header header"
                              "main main"
                              "footer footer";
+        justify-items: center;
     }
 
     
@@ -261,7 +272,7 @@ a {
     }
 
     .header-profile {
-        width: 25%;
+        width: 15%;
     }
 
     .header-title {
@@ -274,14 +285,15 @@ a {
 
     .main {
         height: 100%;
-        width: 100%;
+        width: 90%;
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: center;
     }
 
     .main-card {
-        height: 80%;
+        height: 70%;
+        width: 50%;
         padding: .8rem;
         margin-right: .8rem;
         margin-left: .8rem;
@@ -293,6 +305,7 @@ a {
     }
 
     .main-card-text {
+        margin: .5rem 0rem;
         font-size: 1.2rem;
     }
 
@@ -321,5 +334,43 @@ a {
     .footer-text {
         margin: .8rem .2rem;
         font-size: 1.3rem;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .nav-links-link {
+        font-size: 1.6rem;
+    }
+
+    .header-title {
+        font-size: 2rem;
+    }
+
+    .header-subtitle {
+        font-size: 1.9rem;
+    }
+
+    .main-card-title {
+        font-size: 2rem;
+    }
+
+    .main-card-skills-skill {
+        padding: .8rem .8rem;
+    }
+
+    .main-card-text {
+        font-size: 1.8rem;
+    }
+
+    .footer-links {
+        margin-bottom: 2rem;
+    }
+
+    .footer-links-link-sm-img {
+        width: 55%;
+    }
+
+    .footer-text {
+        font-size: 1.6rem;
     }
 }
